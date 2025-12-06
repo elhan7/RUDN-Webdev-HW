@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristiano‑cake – магазин десертов</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-top">
+      <div class="hero-logo">Cristiano‑cake</div>
+      <nav class="hero-nav">
+        <a href="#about">О нас</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#instagram">Галерея</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#order">Заказ</a>
+      </nav>
+      <a class="hero-phone" href="tel:+78120000000">+7 (803) 930‑57‑65</a>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-label">вкусные пирожные</p>
+        <h1>Панкейки и капкейки от 500 ₽/шт.<br>с доставкой по Москве</h1>
+        <p class="hero-sub">Приготовим качественно и быстро. Доставка 24/7.</p>
+        <a href="#catalog" class="btn btn-primary">Перейти в каталог</a>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="img/hero.jpg" alt="Панкейки" class="hero-image">
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="two-cols">
+      <div class="section-text">
+        <h2>О нас</h2>
+        <p>Мы готовим десерты с любовью и тщательно упаковываем их, чтобы всё доехало целым и красивым.</p>
+        <p>Более пяти лет опыта, используем только свежие продукты и проверенные рецепты.</p>
+        <a href="#order" class="btn btn-secondary">Заказать сейчас</a>
+      </div>
+      <div class="about-photo"><img src="img/confectioner.jpg" alt="Кондитер"></div>
+    </div>
+  </section>
+
+  <section id="catalog" class="section">
+    <h2 class="section-title">Каталог десертов</h2>
+    <div class="catalog-grid" id="product-grid"></div>
+  </section>
+
+
+  <section class="section section-dark">
+    <div class="two-cols">
+      <div class="phone-mockup"><img src="img/phone-mockup.png" alt="Панкейк на телефоне"></div>
+      <div class="section-text">
+        <h2>Приготовим заказ по фото или эскизу</h2>
+        <p>Просто пришлите фотографию или рисунок, расскажите о своём празднике — и мы создадим индивидуальный десерт.</p>
+        <a href="#order" class="btn btn-primary">Заказать по фото</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section section-dark">
+    <h2 class="section-title">Отзывы клиентов</h2>
+    <div class="reviews">
+      <article class="review-card">
+        <p class="review-text">«Попробовали “Ассорти ягод” — невероятно вкусно и красиво! Обязательно закажем ещё.»</p>
+        <div class="review-author">
+          <img src="img/review-avatar1.jpg" alt="Отзыв клиента 1">
+          <div>
+            <p class="review-name">Екатерина</p>
+            <p class="review-meta">Свадебный заказ</p>
+          </div>
+        </div>
+      </article>
+      <article class="review-card">
+        <p class="review-text">«“Карамельный праздник” оказался идеальным дополнением к нашему вечеру. Спасибо за заботу!»</p>
+        <div class="review-author">
+          <img src="img/review-avatar2.jpg" alt="Отзыв клиента 2">
+          <div>
+            <p class="review-name">Дмитрий</p>
+            <p class="review-meta">День рождения</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="instagram" class="section">
+    <h2 class="section-title">Работы наших мастеров</h2>
+    <div class="gallery-grid">
+      <img src="img/gallery-1.jpg" alt="Фото 1">
+      <img src="img/gallery-2.jpg" alt="Фото 2">
+      <img src="img/gallery-3.jpg" alt="Фото 3">
+      <img src="img/gallery-4.jpg" alt="Фото 4">
+      <img src="img/gallery-5.jpg" alt="Фото 5">
+      <img src="img/gallery-6.jpg" alt="Фото 6">
+      <img src="img/gallery-7.jpg" alt="Фото 7">
+      <img src="img/gallery-8.jpg" alt="Фото 8">
+      <img src="img/gallery-9.jpg" alt="Фото 9">
+    </div>
+  </section>
+
+  <section id="order" class="section section-dark order">
+    <div class="order-inner">
+      <h2>Сделать заказ</h2>
+      <p>Укажите ваш телефон, мы перезвоним и уточним детали.</p>
+      <p id="total-sum">Общая сумма: 0 ₽</p>
+      <form class="order-form">
+        <input type="tel" placeholder="+7 (___) ___‑__‑__" required>
+        <button type="submit" class="btn btn-primary">Оформить заказ</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Cristiano‑cake. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
