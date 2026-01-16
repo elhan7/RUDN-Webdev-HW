@@ -115,3 +115,23 @@ function init() {
 }
 
 document.addEventListener('DOMContentLoaded', init);
+
+const orderForm = document.querySelector('.order-form');
+if (orderForm) {
+  orderForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const phoneInput = orderForm.querySelector('input[type="tel"]');
+    
+    if (phoneInput.value.trim() === "") {
+      alert("Пожалуйста, введите номер телефона!");
+      return;
+    }
+
+    alert(`Заказ на сумму ${document.getElementById('total-sum').textContent.split(': ')[1]} принят! Мы перезвоним вам на номер: ${phoneInput.value}`);
+    
+    quantities.fill(0);
+    products.forEach((_, i) => renderCard(i));
+    updateTotal();
+    orderForm.reset();
+  });
+}
